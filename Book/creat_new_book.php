@@ -1,3 +1,22 @@
+<?php
+include_once '../DBconnect.php';
+include_once 'book.php';
+include_once 'BookDB.php';
+if ($_SERVER['REQUEST_METHOD'] = 'POST') {
+    if (!empty($_POST['book_name']) && !empty($_POST['book_author']) && !empty($_POST['book_producer'])
+        && !empty($_POST['book_price'])) {
+        $book_name = $_POST['book_name'];
+        $book_author= $_POST['book_author'];
+        $book_producer = $_POST['book_producer'];
+        $book_price = $_POST['book_price'];
+
+        $book = new book($book_name,$book_author,$book_producer,$book_price);
+        $bookdb= new BookDB();
+        $bookdb->CreatBook($book);
+        header('location:listbook.php', true);
+    }
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -47,22 +66,4 @@
 </div>
 </body>
 </html>
-<?php
-include_once '../DBconnect.php';
-include_once 'book.php';
-include_once 'BookDB.php';
-if ($_SERVER['REQUEST_METHOD'] = 'POST') {
-    if (!empty($_POST['book_name']) && !empty($_POST['book_author']) && !empty($_POST['book_producer'])
-        && !empty($_POST['book_price'])) {
-        $book_name = $_POST['book_name'];
-        $book_author= $_POST['book_author'];
-        $book_producer = $_POST['book_producer'];
-        $book_price = $_POST['book_price'];
 
-        $book = new book($book_name,$book_author,$book_producer,$book_price);
-        $bookdb= new BookDB();
-        $bookdb->CreatBook($book);
-        header('location:listbook.php', true);
-    }
-}
-?>

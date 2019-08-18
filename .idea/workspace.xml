@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22624e28-e9d2-4bb2-af29-d59719518162" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Library_manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/BookDB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/Updatebook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/creat_new_book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/deleteB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Book/listbook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Category/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Category/CategoryDB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Category/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBconnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book/BookDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Book/BookDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book/creat_new_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/Book/creat_new_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book/listbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/Book/listbook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Category/CategoryDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Category/CategoryDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Category/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Category/listcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +36,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
@@ -72,6 +64,8 @@
       <workItem from="1565918975190" duration="22863000" />
       <workItem from="1565950270971" duration="538000" />
       <workItem from="1565967924007" duration="743000" />
+      <workItem from="1566096295150" duration="4396000" />
+      <workItem from="1566101264313" duration="7360000" />
     </task>
     <servers />
   </component>
@@ -83,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

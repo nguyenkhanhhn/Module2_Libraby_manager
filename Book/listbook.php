@@ -32,7 +32,6 @@ $listbook= $list->getBook();
         <th><?php echo $value->getBookAuthor() ?></th>
         <th><?php echo $value->getBookProducer() ?></th>
         <th><?php echo $value->getBookPrice() ?></th>
-        <th><?php echo $value->getBookCategoryId()?></th>
         <td>
             <span><a href="deleteB.php?id=<?php echo $value->getBookId()?>">Delete</a></span>
             <span><a href="Updatebook.php?id=<?php echo $value->getBookId()?>">Update</a></span>

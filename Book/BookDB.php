@@ -15,8 +15,7 @@ class BookDB
 
     public function getBook()
     {
-        $sql = "SELECT `book_id`, `book_name`, `book_author`, `book_producer`, `book_price`, `category_name`
-FROM book JOIN categorys ON book.category_id = categorys.category_id";
+     $sql="SELECT * FROM `book`";
         $mysql = $this->conn->prepare($sql);
         $mysql->execute();
         $mysql->setFetchMode(PDO::FETCH_ASSOC);

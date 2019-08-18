@@ -14,7 +14,7 @@
         <a>Home</a>
         <a>Students</a>
         <a href="Book/listbook.php">Book</a>
-        <a href="Category/list.php">Category</a>
+        <a href="Category/listcategory.php">Category</a>
         <a>Borrow</a>
     </span>
 
