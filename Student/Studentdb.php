@@ -1,6 +1,7 @@
 <?php
 include_once "../DBconnect.php";
 include_once "Student.php";
+include_once "Studentdetai.php";
 
 class Studentdb
 {
@@ -67,10 +68,28 @@ class Studentdb
             $newstudent = new Student($data['student_name'], $data['student_class'], $data['student_address'], $data['student_bird_day'], $data['student_phone']);
             $newstudent->student_id = $data['student_id'];
             return $newstudent;
-        }
-        else{
+        } else {
             echo "Người dùng không tồn tại";
         }
     }
 
+    public function detail($id)
+    {
+        $sql = "SELECT students.student_name,students.student_class,BorrowOrder.loan_day,BorrowOrder.pay_day,book.book_name,categorys.category_name FROM students JOIN BorrowOrder ON students.student_id=BorrowOrder.student_id JOIN orderdetail ON orderdetail.borrow_id=BorrowOrder.borrow_id JOIN book ON orderdetail.book_id=book.book_id JOIN categorys ON categorys.category_id=book.category_id WHERE students.student_id='$id'
+";
+        $mysql = $this->conn->prepare($sql);
+        $mysql->execute();
+        $mysql->setFetchMode(PDO::FETCH_ASSOC);
+        $data = $mysql->fetchAll();
+
+        $arr = [];
+        foreach ($data as $value) {
+            $newStudentdetail= new Studentdetai($value['student_name'],$value['student_class'],
+                $value['loan_day'],$value['pay_day'],$value['book_name'],$value['category_name']);
+            $newStudentdetail->student_id = $value['student_id'];
+            array_push($arr, $newStudentdetail);
+        }
+
+        return $arr;
+    }
 }

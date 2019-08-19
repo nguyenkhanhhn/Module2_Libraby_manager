@@ -2,7 +2,7 @@
 include_once '../DBconnect.php';
 include_once 'Student.php';
 include_once 'Studentdb.php';
-if ($_SERVER['REQUEST_METHOD'] = 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($_POST['student_name']) && !empty($_POST['student_class']) && !empty($_POST['student_address'])
         && !empty($_POST['student_bird_day']) && !empty($_POST['student_phone'])) {
         if (!empty($_GET['id'])) {
@@ -69,15 +69,15 @@ if ($_SERVER['REQUEST_METHOD'] = 'POST') {
     <h1>Thêm danh sách sinh viên</h1>
     <form method="post">
         <label>Tên sinh viên:</label><br>
-        <input type="text" name="student_name"><br>
+        <input type="text" name="student_name" value="<?php echo $student->getStudentName()?>"><br>
         <label>Lớp:</label><br>
-        <input type="text" name="student_class"><br>
+        <input type="text" name="student_class" value="<?php echo $student->getStudentClass()?>"><br>
         <label>Địa chỉ:</label><br>
-        <input type="text" name="student_address"><br>
+        <input type="text" name="student_address" value="<?php echo $student->getStudentAddress()?>"><br>
         <label>Ngày sinh</label><br>
-        <input type="text" name="student_bird_day"><br>
+        <input type="text" name="student_bird_day" value="<?php echo $student->getStudentBirdDay()?>"><br>
         <label>Phone</label><br>
-        <input type="text" name="student_phone"><br>
+        <input type="text" name="student_phone" value="<?php echo $student->getStudentPhone()?>"><br>
         <input type="submit" value="Nhập dữ liệu">
     </form>
 </div>

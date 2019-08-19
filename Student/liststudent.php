@@ -36,6 +36,7 @@ $liststudent= $list->getstudent();
             <th>
                 <span><a href="deleteStudent.php?id=<?php echo $value->getStudentId()?>">Delete</a></span>
                 <span><a href="updatestudent.php?id=<?php echo $value->getStudentId()?>">Update</a></span>
+                <span><a href="detail.php?id=<?php echo $value->getStudentId()?>">Chi tiet</a></span>
 
             </th>
         </tr>

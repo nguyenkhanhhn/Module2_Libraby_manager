@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="22624e28-e9d2-4bb2-af29-d59719518162" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowOrder/borrowdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowOrder/borrowdb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowOrder/listborrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowOrder/listborrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/Studentdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/Student/Studentdb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/liststudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Student/liststudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student/updatestudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Student/updatestudent.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +63,7 @@
       <workItem from="1565967924007" duration="743000" />
       <workItem from="1566096295150" duration="4396000" />
       <workItem from="1566101264313" duration="20046000" />
-      <workItem from="1566176747226" duration="8927000" />
+      <workItem from="1566176747226" duration="18818000" />
     </task>
     <servers />
   </component>
@@ -82,5 +82,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Student/Studentdb.php</url>
+          <line>85</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
