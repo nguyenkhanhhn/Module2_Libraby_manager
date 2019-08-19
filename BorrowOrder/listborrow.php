@@ -35,6 +35,6 @@ $listborrow=$list->getborrow()
         </tr>
     <?php endforeach; ?>
 </table>
-<span><a href="Creatborrow.php">Add new student</a></span>
+<span><a href="creatborrow.php">Add new borroworder</a></span>
 </body>
 </html>

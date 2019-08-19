@@ -12,10 +12,10 @@
     <h1><hr>Library Manager</hr></h1>
     <span>
         <a>Home</a>
-        <a>Students</a>
+        <a href="Student/liststudent.php">Students</a>
         <a href="Book/listbook.php">Book</a>
         <a href="Category/listcategory.php">Category</a>
-        <a>Borrow</a>
+        <a href="BorrowOrder/listborrow.php">Borrow</a>
     </span>
 
 </div>
